@@ -37,6 +37,8 @@ import astropy.table
 import lsst.pex.config as pexConfig
 import lsst.pipe.base as pipeBase
 
+from IPython.core.debugger import Tracer
+
 
 class BaseSourceSelectorConfig(pexConfig.Config):
     pass
@@ -304,6 +306,7 @@ class MagnitudeLimit(BaseLimit):
         selected = np.logical_not(_getFieldFromCatalog(catalog, flagField, isFlag=True))
         flux = _getFieldFromCatalog(catalog, self.fluxField)
 
+        # Tracer()()
         magnitude = (flux*u.nJy).to_value(u.ABmag)
         selected &= BaseLimit.apply(self, magnitude)
         return selected
