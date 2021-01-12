@@ -1,29 +1,29 @@
 .. lsst-task-topic:: lsst.meas.algorithms.InstallGaussianPsfTask
-​
+
 ######################
 InstallGaussianPsfTask
 ######################
-​
+
 ``InstallGaussianPsfTask`` installs a Gaussian PSF model in an exposure.
-​
+
 .. _lsst.meas.algorithms.InstallGaussianPsfTask-summary:
-​
+
 Processing summary
 ==================
-​
+
 ``InstallGaussianPsfTask`` installs a Gaussian PSF model in an exposure, creating a new PSF with the same sigma and width if a PSF already exists for the exposure. If there is not a PSF model for the exposure, the sigma and width are taken from the config.
 .. _lsst.meas.algorithms.InstallGaussianPsfTask-api:
-​
+
 Python API summary
 ==================
-​
+
 .. lsst-task-api-summary:: lsst.meas.algorithms.InstallGaussianPsfTask
-​
+
 .. _lsst.meas.algorithms.InstallGaussianPsfTask-examples:
-​
+
 Examples
 ========
-​
+
 .. code-block:: python
     from lsst.afw.image import ExposureF
     from lsst.meas.algorithms.installGaussianPsf import InstallGaussianPsfTask, FwhmPerSigma
