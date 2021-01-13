@@ -12,6 +12,7 @@ Processing summary
 ==================
 
 ``InstallGaussianPsfTask`` installs a Gaussian PSF model in an exposure, creating a new PSF with the same sigma and width if a PSF already exists for the exposure. If there is not a PSF model for the exposure, the sigma and width are taken from the config.
+
 .. _lsst.meas.algorithms.InstallGaussianPsfTask-api:
 
 Python API summary
