@@ -29,7 +29,7 @@ Configuration fields
 
 .. lsst-task-config-fields:: lsst.meas.algorithms.LoadReferenceObjectsTask
 
-.. _lsst.meas.algorithms.LoadReferenceObjectsTask-indepth
+.. _lsst.meas.algorithms.LoadReferenceObjectsTask-indepth:
 
 In Depth
 ========
